@@ -9,6 +9,16 @@ import java.util.List;
 public class StudentServiceImpl implements StudentService {
     private StudentRepository studentRepository;
 
+    public StudentServiceImpl() {
+        super();
+    }
+
+    public StudentServiceImpl(StudentRepository studentRepository) {
+        super();
+        System.out.println("Constructor Injection");
+        this.studentRepository = studentRepository;
+    }
+
     public void setStudentRepository(StudentRepository studentRepository) {
         System.out.println("Setter Injection");
         this.studentRepository = studentRepository;
