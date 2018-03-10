@@ -7,10 +7,11 @@ import vn.its.repository.StudentRepositoryImpl;
 import java.util.List;
 
 public class StudentServiceImpl implements StudentService {
-    private StudentRepository studentRepository;
+    private StudentRepository studentRepository = new StudentRepositoryImpl();
 
     public StudentServiceImpl() {
         super();
+        System.out.println("Default Constructor Injection");
     }
 
     public StudentServiceImpl(StudentRepository studentRepository) {

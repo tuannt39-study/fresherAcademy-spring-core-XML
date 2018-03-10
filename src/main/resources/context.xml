@@ -7,8 +7,8 @@
         
     </bean>
 
-    <bean name="studentService" class="vn.its.service.StudentServiceImpl">
+    <bean name="studentService" class="vn.its.service.StudentServiceImpl" autowire="default">
         <!--<property name="studentRepository" ref="studentRepository"></property>-->
-        <constructor-arg name="studentRepository" ref="studentRepository"></constructor-arg>
+        <!--<constructor-arg name="studentRepository" ref="studentRepository"></constructor-arg>-->
     </bean>
 </beans>
