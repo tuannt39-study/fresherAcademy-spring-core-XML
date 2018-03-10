@@ -7,7 +7,7 @@ import vn.its.repository.StudentRepositoryImpl;
 import java.util.List;
 
 public class StudentServiceImpl implements StudentService {
-    private StudentRepository studentRepository = new StudentRepositoryImpl();
+    private StudentRepository studentRepository;
 
     public StudentServiceImpl() {
         super();
